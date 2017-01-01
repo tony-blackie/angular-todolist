@@ -5,36 +5,10 @@
         .module('awesome-app.main')
         .controller('MainCtrl', MainCtrl);
 
-    MainCtrl.$inject = ['$scope'];
+    MainCtrl.$inject = ['$scope', 'MainService'];
 
-    function MainCtrl($scope) {
-        $scope.items = [
-            {
-                name: "Liza",
-                cross: false
-            },
-            {
-                name: "Tina",
-                cross: false
-
-            },
-            {
-                name: "Angelina",
-                cross: false
-            },
-            {
-                name: "Eva",
-                cross: false
-            },
-            {
-                name: "Dasha",
-                cross: false
-            },
-            {
-                name: "Alice",
-                cross: false
-            }
-        ];
+    function MainCtrl($scope, MainService) {
+        $scope.items = MainService.items;
 
         $scope.deleteItem = function(index) {
             if ($scope.items[index].name  === "Angelina") {
