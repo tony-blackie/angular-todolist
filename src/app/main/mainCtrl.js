@@ -8,7 +8,7 @@
     MainCtrl.$inject = ['$scope', 'MainService'];
 
     function MainCtrl($scope, MainService) {
-        $scope.items = MainService.items;
+        $scope.items = MainService.getItems();
 
         $scope.deleteItem = function(index) {
             if ($scope.items[index].name  === "Angelina") {

@@ -36,6 +36,10 @@
             }
         ];
 
+        service.getItems = function ()  {
+            return service.items;
+        }
+
         return service;
     }
 })();
