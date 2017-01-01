@@ -1,9 +1,9 @@
 <div class="container">
     <div ng-repeat="item in items">
         <div
-                ng-if="item.name !== 'Liza' "
-                ng-click="deleteItem($index)">
+                ng-if="item.name !== 'Liza' ">
             {{item.name}}
+            <span ng-click="deleteItem($index)">X</span>
         </div>
     </div>
 </div>
