@@ -9,11 +9,6 @@
                     url: '/',
                     controller: 'MainCtrl',
                     templateUrl: 'main/main.tpl.html'
-                })
-                .state('price', {
-                    url: '/price',
-                    controller: 'PriceCtrl',
-                    templateUrl: 'main/price.tpl.html'
                 });
         });
 })();

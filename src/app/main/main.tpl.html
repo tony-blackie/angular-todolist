@@ -1,4 +1,8 @@
 <div class="container">
-    LOLLOLOLLLLLOOLL
+    <div ng-repeat="item in items">
+        <div ng-if="item.name !== 'Liza' ">
+            {{item.name}}
+        </div>
+    </div>
 </div>
 
