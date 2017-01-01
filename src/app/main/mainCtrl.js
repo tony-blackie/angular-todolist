@@ -16,9 +16,25 @@
                 name: "Tina"
             },
             {
+                name: "Angelina"
+            },
+            {
+                name: "Eva"
+            },
+            {
+                name: "Dasha"
+            },
+            {
                 name: "Alice"
             }
-        ]
+        ];
+
+        $scope.deleteItem = function(index) {
+            if ($scope.items[index].name  === "Tina") {
+                return;
+            }
+            $scope.items.splice(index, 1);
+        }
     }
 
 })();
