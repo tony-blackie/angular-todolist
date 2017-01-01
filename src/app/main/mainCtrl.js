@@ -10,31 +10,49 @@
     function MainCtrl($scope) {
         $scope.items = [
             {
-                name: "Liza"
+                name: "Liza",
+                cross: false
             },
             {
-                name: "Tina"
+                name: "Tina",
+                cross: false
+
             },
             {
-                name: "Angelina"
+                name: "Angelina",
+                cross: false
             },
             {
-                name: "Eva"
+                name: "Eva",
+                cross: false
             },
             {
-                name: "Dasha"
+                name: "Dasha",
+                cross: false
             },
             {
-                name: "Alice"
+                name: "Alice",
+                cross: false
             }
         ];
 
         $scope.deleteItem = function(index) {
-            if ($scope.items[index].name  === "Tina") {
+            if ($scope.items[index].name  === "Angelina") {
                 return;
             }
             $scope.items.splice(index, 1);
         }
+
+
+        $scope.crossOut = function (index) {
+            if ($scope.items[index].cross === false) {
+                $scope.items[index].cross = true;
+            } else {
+                $scope.items[index].cross = false;
+            }
+        }
+
+
     }
 
 })();
