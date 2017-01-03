@@ -8,6 +8,8 @@
     function MainService () {
         var service = this;
 
+        service.chosenListNumber = null;
+
         service.items = [
             {
                 name: 'TodoList1',
@@ -82,6 +84,10 @@
         service.getItems = function ()  {
             return service.items;
         };
+
+        service.saveNumber = function(number) {
+            service.number = number;
+        }
 
         return service;
     }
