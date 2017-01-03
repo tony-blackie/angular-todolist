@@ -5,7 +5,13 @@
             .module('a')
             .controller('TodoCtrl', TodoCtrl);
 
-    function TodoCtrl($scope) {
+    TodoCtrl.$inject = ['$scope'];
 
+    function TodoCtrl($scope) {
+        $scope.todolist = {};
+
+        $scope.$on('itemSelected', function(event, param) {
+            $scope.todolist = param;
+        });
     }
 })();

@@ -10,6 +10,10 @@
     function MainCtrl($scope, MainService) {
         $scope.items = MainService.getItems();
 
+        $scope.selectItem = function(index) {
+            $scope.$broadcast('itemSelected', $scope.items[index]);
+        };
+
         $scope.deleteItem = function(index) {
             if ($scope.items[index].name  === "Angelina") {
                 return;

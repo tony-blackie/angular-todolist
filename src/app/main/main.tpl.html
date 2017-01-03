@@ -4,7 +4,7 @@
 </nav>
 <div style="width: 200px; float: right;">
 	<div ng-repeat="item in items">
-		<div>{{item.name}}</div>
+		<div ng-click="selectItem($index)">{{item.name}}</div>
 	</div>
 </div>
 
