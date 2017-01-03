@@ -14,30 +14,7 @@
             $scope.$broadcast('itemSelected', $scope.items[index]);
         };
 
-        $scope.deleteItem = function(index) {
-            if ($scope.items[index].name  === "Angelina") {
-                return;
-            }
-            $scope.items.splice(index, 1);
-        };
 
-
-        $scope.crossOut = function (index) {
-            if ($scope.items[index].cross === false) {
-                $scope.items[index].cross = true;
-            } else {
-                $scope.items[index].cross = false;
-            }
-        };
-
-        $scope.addName = function () {
-            var obj = {
-                name: $scope.name,
-                cross: false
-            };
-            $scope.items.push(obj);
-
-        };
 
 
     }
