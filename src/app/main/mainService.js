@@ -10,29 +10,72 @@
 
         service.items = [
             {
-                name: "Liza",
-                cross: false
+                name: 'TodoList1',
+                content: [
+                    {
+                        text: "Liza",
+                        cross: false
+                    },
+                    {
+                        text: "Liza2",
+                        cross: false
+                    },
+                    {
+                        text: "Liza3",
+                        cross: false
+                    }
+                ]
             },
             {
-                name: "Tina",
-                cross: false
-
+                name: 'TodoList2',
+                content: [
+                    {
+                        text: "Liza",
+                        cross: false
+                    },
+                    {
+                        text: "Liza2",
+                        cross: false
+                    },
+                    {
+                        text: "Liza3",
+                        cross: false
+                    }
+                ]
             },
             {
-                name: "Angelina",
-                cross: false
+                name: 'TodoList3',
+                content: [
+                    {
+                        text: "Liza",
+                        cross: false
+                    },
+                    {
+                        text: "Liza2",
+                        cross: false
+                    },
+                    {
+                        text: "Liza3",
+                        cross: false
+                    }
+                ]
             },
             {
-                name: "Eva",
-                cross: false
-            },
-            {
-                name: "Dasha",
-                cross: false
-            },
-            {
-                name: "Alice",
-                cross: false
+                name: 'TodoList4',
+                content: [
+                    {
+                        text: "Liza",
+                        cross: false
+                    },
+                    {
+                        text: "Liza2",
+                        cross: false
+                    },
+                    {
+                        text: "Liza3",
+                        cross: false
+                    }
+                ]
             }
         ];
 

@@ -2,5 +2,11 @@
 	<div ui-sref="main.todo"><a>TODO</a></div>
 	<div ui-sref="main.common"><a>COMMON</a></div>
 </nav>
+<div style="width: 200px; float: right;">
+	<div ng-repeat="item in items">
+		<div>{{item.name}}</div>
+	</div>
+</div>
+
 
 <ui-view></ui-view>

@@ -7,5 +7,5 @@ angular.module('awesome-app', [
     'a'
 ]).
 config(['$urlRouterProvider', function($urlRouterProvider) {
-    //$urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/todo');
 }]);

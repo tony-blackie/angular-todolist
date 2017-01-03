@@ -3,15 +3,15 @@
 		<input type="text" placeholder="Name" ng-model="name"/>
 		<button ng-click="addName()">+</button>
 	</div>
-	<div ng-repeat="item in items">
-		<div
-				ng-if="item.name !== 'Liza' " class="item"
-				ng-class="{'crossed': item.cross}"
-				ng-click="crossOut($index)"
-				>
-			{{item.name}}
-			<span ng-click="deleteItem($index)">X</span>
-		</div>
-	</div>
+	<!--<div ng-repeat="item in items">-->
+		<!--<div-->
+				<!--ng-if="item.name !== 'Liza' " class="item"-->
+				<!--ng-class="{'crossed': item.cross}"-->
+				<!--ng-click="crossOut($index)"-->
+				<!-->-->
+			<!--{{item.name}}-->
+			<!--<span ng-click="deleteItem($index)">X</span>-->
+		<!--</div>-->
+	<!--</div>-->
 </div>
 

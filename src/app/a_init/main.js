@@ -8,7 +8,8 @@
                 .state('main', {
                     url: '/',
                     controller: 'MainCtrl',
-                    templateUrl: 'main/main.tpl.html'
+                    templateUrl: 'main/main.tpl.html',
+                    abstract: true
                 })
                 .state('main.todo', {
                     url: 'todo',
