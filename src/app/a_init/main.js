@@ -10,11 +10,6 @@
                     controller: 'MainCtrl',
                     templateUrl: 'main/main.tpl.html'
                 })
-                .state('aj', {
-                    url: '/aj',
-                    controller: 'MainCtrl',
-                    templateUrl: 'aj/aj.tpl.html'
-                })
                 .state('main.todo', {
                     url: '/todo',
                     controller: 'TodoCtrl',
