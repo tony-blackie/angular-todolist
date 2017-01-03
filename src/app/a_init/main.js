@@ -11,12 +11,12 @@
                     templateUrl: 'main/main.tpl.html'
                 })
                 .state('main.todo', {
-                    url: '/todo',
+                    url: 'todo',
                     controller: 'TodoCtrl',
                     templateUrl: 'todo/todo.tpl.html'
                 })
                 .state('main.common', {
-                    url: '/common',
+                    url: 'common',
                     controller: 'CommonCtrl',
                     templateUrl: 'common/common.tpl.html'
                 });
