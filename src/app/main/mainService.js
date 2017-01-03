@@ -2,7 +2,7 @@
     "use strict";
 
     angular
-        .module('awesome-app.main')
+        .module('a')
         .factory('MainService', MainService);
 
     function MainService () {
@@ -38,7 +38,7 @@
 
         service.getItems = function ()  {
             return service.items;
-        }
+        };
 
         return service;
     }

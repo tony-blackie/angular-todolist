@@ -1,18 +1,6 @@
+<nav>
+	<div ui-sref="main.todo"><a>TODO</a></div>
+	<div ui-sref="main.common"><a>COMMON</a></div>
+</nav>
 
-<div class="container">
-    <div class="form">
-        <input type="text" placeholder="Name" ng-model="name"/>
-        <button ng-click="addName()">+</button>
-    </div>
-    <div ng-repeat="item in items">
-        <div
-                ng-if="item.name !== 'Liza' " class="item"
-                ng-class="{'crossed': item.cross}"
-                ng-click="crossOut($index)"
-                >
-            {{item.name}}
-            <span ng-click="deleteItem($index)">X</span>
-        </div>
-    </div>
-</div>
-
+<ui-view></ui-view>

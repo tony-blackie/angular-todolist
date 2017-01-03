@@ -2,7 +2,7 @@
     "use strict";
 
     angular
-        .module('awesome-app.main')
+        .module('a')
         .controller('MainCtrl', MainCtrl);
 
     MainCtrl.$inject = ['$scope', 'MainService'];
