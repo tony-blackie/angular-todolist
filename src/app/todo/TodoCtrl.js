@@ -5,13 +5,15 @@
             .module('a')
             .controller('TodoCtrl', TodoCtrl);
 
-    TodoCtrl.$inject = ['$scope'];
+    TodoCtrl.$inject = ['$scope', 'MainService'];
 
-    function TodoCtrl($scope) {
-        $scope.todolist = {};
+    function TodoCtrl($scope, MainService) {
+        var index = MainService.getNumber();
+        $scope.todoList = MainService.getItems()[index];
 
-        $scope.$on('itemSelected', function(event, param) {
-            $scope.todolist = param;
+        $scope.$on('indexChange', function(){
+           var index = MainService.getNumber();
+            $scope.todoList = MainService.getItems()[index];
         });
 
         $scope.deleteItem = function(index) {

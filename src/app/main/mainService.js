@@ -8,7 +8,7 @@
     function MainService () {
         var service = this;
 
-        service.chosenListNumber = null;
+        service.chosenListNumber = 0;
 
         service.items = [
             {
@@ -32,15 +32,15 @@
                 name: 'TodoList2',
                 content: [
                     {
-                        text: "Liza",
+                        text: "Lola",
                         cross: false
                     },
                     {
-                        text: "Liza2",
+                        text: "Lola2",
                         cross: false
                     },
                     {
-                        text: "Liza3",
+                        text: "Lola3",
                         cross: false
                     }
                 ]
@@ -49,15 +49,15 @@
                 name: 'TodoList3',
                 content: [
                     {
-                        text: "Liza",
+                        text: "Lila",
                         cross: false
                     },
                     {
-                        text: "Liza2",
+                        text: "Lila2",
                         cross: false
                     },
                     {
-                        text: "Liza3",
+                        text: "Lila3",
                         cross: false
                     }
                 ]
@@ -66,15 +66,15 @@
                 name: 'TodoList4',
                 content: [
                     {
-                        text: "Liza",
+                        text: "Lesya",
                         cross: false
                     },
                     {
-                        text: "Liza2",
+                        text: "Lesya2",
                         cross: false
                     },
                     {
-                        text: "Liza3",
+                        text: "Lesya3",
                         cross: false
                     }
                 ]
@@ -86,8 +86,12 @@
         };
 
         service.saveNumber = function(number) {
-            service.number = number;
-        }
+            service.chosenListNumber = number;
+        };
+
+        service.getNumber= function() {
+            return service.chosenListNumber;
+        };
 
         return service;
     }

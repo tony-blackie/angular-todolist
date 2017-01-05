@@ -11,7 +11,8 @@
         $scope.items = MainService.getItems();
 
         $scope.selectItem = function(index) {
-            $scope.$broadcast('itemSelected', $scope.items[index]);
+            MainService.saveNumber(index);
+            $scope.$broadcast('indexChange');
         };
 
 

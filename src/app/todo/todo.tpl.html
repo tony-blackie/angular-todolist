@@ -4,7 +4,7 @@
 		<button ng-click="addName()">+</button>
 	</div>
 	<div>{{todolist.name}}</div>
-	<div ng-repeat="item in todolist.content">
+	<div ng-repeat="item in todoList.content">
 		<div
 				ng-class="{'crossed': item.cross}"
 				ng-click="crossOut($index)"
